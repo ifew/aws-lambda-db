@@ -1,14 +1,12 @@
 using Amazon.Lambda.Core;
-using Amazon.Lambda.Serialization.Json;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
-using System.Threading.Tasks;
 
-[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
 namespace aws_lambda_db
 {

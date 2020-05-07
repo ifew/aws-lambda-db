@@ -1,4 +1,4 @@
-# Example AWS Lambda C# .NET Core 2.2 with connect MySQL via not using any ORM
+# Example AWS Lambda C# .NET Core 3.1 with connect MySQL via not using any ORM
 
 ## Test and Deploy with AWS CLI
 

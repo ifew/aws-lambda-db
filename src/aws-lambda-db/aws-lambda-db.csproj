@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
-    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.0.1" />
 
-    <PackageReference Include="MySqlConnector" Version="0.53.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.7.0-preview4.19212.13" />
+    <PackageReference Include="MySqlConnector" Version="0.65.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
   </ItemGroup>
 </Project>
